@@ -1,8 +1,18 @@
+ body {
+   display: grid;
+   grid-template-rows: 200px 700px;
+   grid-gap: 20px;
+
+ }
  #container {
   display: grid;
   grid-gap: 1px;
   width: 700px;
   height: 700px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  border: 1px solid black;
 }
 
 .content {
@@ -10,6 +20,11 @@
   width: 100%;
   height: 100%;
   box-shadow: 0 0 0 1px black;
- 
- 
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
 }
